@@ -16,6 +16,8 @@ defmodule Aoc2020.Day1 do
       |> Enum.map(&abs/1)
       |> MapSet.new()
 
-    MapSet.intersection(candidates, expenses) |> MapSet.to_list() |> Enum.reduce(fn elem, acc -> acc * elem end)
+    MapSet.intersection(candidates, expenses)
+    |> MapSet.to_list()
+    |> Enum.reduce(fn elem, acc -> acc * elem end)
   end
 end

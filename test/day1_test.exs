@@ -16,12 +16,12 @@ defmodule Aoc2020.Day1Test do
       1456
     ]
 
-    assert Day1.start(expenses) == 514579
+    assert Day1.start(expenses) == 514_579
   end
 
   test "part one input" do
     expenses = load_integer_list("day1_input")
 
-    assert Day1.start(expenses) == 1019904
+    assert Day1.start(expenses) == 1_019_904
   end
 end

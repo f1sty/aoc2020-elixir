@@ -2,7 +2,25 @@ defmodule Aoc2020.Day2 do
   @moduledoc false
 
   def part_one(input) do
-    input = parse(input)
+    input
+    |> parse()
+    |> Enum.reduce(0, fn [range, letter, password], acc ->
+      valid? =
+        password
+        |> String.graphemes()
+        |> Enum.reduce(0, fn current_letter, acc ->
+          case current_letter == letter do
+            true -> acc + 1
+            _ -> acc
+          end
+        end)
+        |> Kernel.in(range)
+
+        case valid? do
+          true -> acc + 1
+          _ -> acc
+        end
+    end)
   end
 
   defp parse(input) when is_binary(input) do

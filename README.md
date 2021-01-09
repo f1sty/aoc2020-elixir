@@ -2,6 +2,8 @@
 
 My solutions for AOC2020
 
+---
+
 ## Days list
 
 - [ ] Day 1
@@ -29,3 +31,7 @@ My solutions for AOC2020
 - [ ] Day 23
 - [ ] Day 24
 - [ ] Day 25
+
+## TODO
+
+- rewrite part day one part two solution

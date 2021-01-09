@@ -2,11 +2,9 @@
 
 My solutions for AOC2020
 
----
-
 ## Days list
 
-- [ ] Day 1
+- [x] Day 1
 - [ ] Day 2
 - [ ] Day 3
 - [ ] Day 4

@@ -32,4 +32,4 @@ My solutions for AOC2020
 
 ## TODO
 
-- rewrite part day one part two solution
+- [ ] rewrite day one part two solution

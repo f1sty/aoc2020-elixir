@@ -21,4 +21,22 @@ defmodule Aoc2020.Day2Test do
       assert Day2.part_one(input) == 410
     end
   end
+
+  describe "part two" do
+    test "sample imput" do
+      input = """
+      1-3 a: abcde
+      1-3 b: cdefg
+      2-9 c: ccccccccc
+      """
+
+      assert Day2.part_two(input) == 1
+    end
+
+    test "generated input" do
+      input = File.read!("test/fixtures/day2_input")
+
+      assert Day2.part_two(input) == 694
+    end
+  end
 end

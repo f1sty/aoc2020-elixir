@@ -17,10 +17,10 @@ defmodule Aoc2020.Day2 do
         end)
         |> Kernel.in(range)
 
-        case valid? do
-          true -> acc + 1
-          _ -> acc
-        end
+      case valid? do
+        true -> acc + 1
+        _ -> acc
+      end
     end)
   end
 

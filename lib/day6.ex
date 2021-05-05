@@ -13,4 +13,18 @@ defmodule Aoc2020.Day6 do
     end)
     |> Enum.sum()
   end
+
+  def part_two(input) do
+    input
+    |> String.split("\n\n", trim: true)
+    |> Enum.map(fn group ->
+      members = String.split(group, "\n", trim: true) |> length()
+      group
+      |> String.replace("\n", "")
+      |> String.graphemes()
+      |> Enum.frequencies()
+      |> Enum.count(fn {_letter, repeats} -> repeats == members end)
+    end)
+    |> Enum.sum()
+  end
 end

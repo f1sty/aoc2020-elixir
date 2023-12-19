@@ -6,7 +6,7 @@ defmodule Aoc2020.Day1 do
 
   @magic_number 2020
 
-  def part_one(expenses) do
+  def part1(expenses) do
     candidates =
       expenses
       |> Enum.map(fn expense -> expense - @magic_number end)
@@ -21,7 +21,7 @@ defmodule Aoc2020.Day1 do
     |> Enum.reduce(fn elem, acc -> acc * elem end)
   end
 
-  def part_two(expenses) do
+  def part2(expenses) do
     combinations = combinations(expenses)
 
     process(expenses, combinations)
